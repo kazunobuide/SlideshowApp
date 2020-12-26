@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Zoom View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="zoomViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="p96-jX-SdE">
                     <connections>
-                        <action selector="z:" destination="BYZ-38-t0r" id="pLf-ZL-1Iy"/>
+                        <action selector="zoom:" destination="BYZ-38-t0r" id="mPD-IL-60B"/>
                         <segue destination="DjB-1i-2ki" kind="show" id="xbF-wG-tes"/>
                     </connections>
                 </tapGestureRecognizer>
@@ -86,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="Rmk-yK-3fN" kind="unwind" unwindAction="unwind:" id="KNn-mU-fMA"/>
+                                    <segue destination="Rmk-yK-3fN" kind="unwind" unwindAction="unwind:" id="hmp-ww-hov"/>
                                 </connections>
                             </button>
                         </subviews>

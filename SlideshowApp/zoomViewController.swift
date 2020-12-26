@@ -14,6 +14,7 @@ class zoomViewController: UIViewController {
     //受け取るためのプロパティ（変数）を宣言しておく
     override func viewDidLoad() {
         super.viewDidLoad()
+        zoomImage.image = image
 
         // Do any additional setup after loading the view.
     }
