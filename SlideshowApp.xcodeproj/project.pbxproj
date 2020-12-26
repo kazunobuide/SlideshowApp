@@ -13,6 +13,7 @@
 		5C2ABE9C2591E00E002F80BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2ABE9A2591E00E002F80BB /* Main.storyboard */; };
 		5C2ABE9E2591E00F002F80BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2ABE9D2591E00F002F80BB /* Assets.xcassets */; };
 		5C2ABEA12591E00F002F80BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2ABE9F2591E00F002F80BB /* LaunchScreen.storyboard */; };
+		5CC5598A259706DC00624947 /* zoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC55989259706DC00624947 /* zoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5C2ABEA22591E00F002F80BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C2ABEAD2596CF01002F80BB /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
 		5C2ABEAE2596CF06002F80BB /* image-2.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = "image-2.heic"; sourceTree = "<group>"; };
+		5CC55989259706DC00624947 /* zoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5C2ABE942591E00E002F80BB /* AppDelegate.swift */,
 				5C2ABE962591E00E002F80BB /* SceneDelegate.swift */,
 				5C2ABE982591E00E002F80BB /* ViewController.swift */,
+				5CC55989259706DC00624947 /* zoomViewController.swift */,
 				5C2ABE9A2591E00E002F80BB /* Main.storyboard */,
 				5C2ABE9D2591E00F002F80BB /* Assets.xcassets */,
 				5C2ABEAD2596CF01002F80BB /* image.jpeg */,
@@ -144,6 +147,7 @@
 				5C2ABE992591E00E002F80BB /* ViewController.swift in Sources */,
 				5C2ABE952591E00E002F80BB /* AppDelegate.swift in Sources */,
 				5C2ABE972591E00E002F80BB /* SceneDelegate.swift in Sources */,
+				5CC5598A259706DC00624947 /* zoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
