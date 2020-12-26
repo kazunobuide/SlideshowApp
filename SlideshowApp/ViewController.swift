@@ -91,4 +91,13 @@ class ViewController: UIViewController {
     @IBAction func unwind(_ segue: UIStoryboardSegue)
     {
     }
-}
+    @IBAction func zoom(_ sender: Any) {
+    }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+            
+            let zoomViewController:zoomViewController = segue.destination as! zoomViewController
+            zoomViewController.imageView = self.Image
+        
+       
+        }
+    }
