@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="277" id="HiJ-Zk-OGR"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="p96-jX-SdE" appends="YES" id="lWt-AB-BRn"/>
+                                    <outletCollection property="gestureRecognizers" destination="aDM-cT-dff" appends="YES" id="cvf-z0-De8"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjd-wZ-tQx">
@@ -47,6 +47,13 @@
                                     <action selector="backImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxb-gT-FyD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-ah-WdF">
+                                <rect key="frame" x="120" y="565" width="126" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,16 +71,18 @@
                     </view>
                     <connections>
                         <outlet property="backImage" destination="mjd-wZ-tQx" id="WcG-IY-m7O"/>
+                        <outlet property="hello" destination="DeL-ah-WdF" id="xWi-xI-5C5"/>
                         <outlet property="imageView" destination="HZE-bE-tIu" id="hkO-kG-0nU"/>
                         <outlet property="nextImage" destination="nZA-FP-WmZ" id="CgQ-th-xIn"/>
+                        <outlet property="onTapImage" destination="HZE-bE-tIu" id="5h0-vF-rS6"/>
                         <outlet property="startButton" destination="6yR-Dr-0TS" id="ac4-Bo-qEF"/>
+                        <segue destination="DjB-1i-2ki" kind="show" identifier="result" id="bZx-5p-PEU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="p96-jX-SdE">
+                <tapGestureRecognizer id="aDM-cT-dff">
                     <connections>
-                        <action selector="zoom:" destination="BYZ-38-t0r" id="mPD-IL-60B"/>
-                        <segue destination="DjB-1i-2ki" kind="show" id="xbF-wG-tes"/>
+                        <action selector="onTapImage:" destination="BYZ-38-t0r" id="HDK-mF-jPY"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -97,6 +106,13 @@
                                     <segue destination="Rmk-yK-3fN" kind="unwind" unwindAction="unwind:" id="hmp-ww-hov"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdD-SS-lkz">
+                                <rect key="frame" x="20" y="560" width="83" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dcw-sD-uUp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -111,6 +127,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="oRE-Nf-RVT"/>
                     <connections>
+                        <outlet property="hello1" destination="DdD-SS-lkz" id="jZG-CF-g4X"/>
                         <outlet property="zoomImage" destination="gkd-fy-rg6" id="lEW-2E-5iH"/>
                     </connections>
                 </viewController>

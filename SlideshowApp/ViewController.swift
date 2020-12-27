@@ -5,6 +5,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextImage: UIButton!
     @IBOutlet weak var backImage: UIButton!
+    @IBOutlet weak var hello: UILabel!
+    
+    
     //配列に指定するindex番号を宣言
     var nowIndex:Int=0
     //スライドショーに指定するタイマーを宣言
@@ -16,6 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func slideShowButton(_ sender: Any) {
+        imageView.isUserInteractionEnabled=true
         //再生中か停止しているかを判定
         if (timer == nil){
             //再生時の処理を実装
@@ -69,11 +73,11 @@ class ViewController: UIViewController {
         }
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         }
-    @IBAction func zoom(_ sender: Any) {
-        }
+    
+        
         override func prepare(for segue: UIStoryboardSegue, sender: Any?){
             let zoomViewController:zoomViewController = segue.destination as! zoomViewController
             zoomViewController.image=imageArray[nowIndex]
+            print("hello")}
         }
-    }
  
