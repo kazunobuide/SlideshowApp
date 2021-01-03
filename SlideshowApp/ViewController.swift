@@ -5,7 +5,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextImage: UIButton!
     @IBOutlet weak var backImage: UIButton!
-    @IBOutlet weak var hello: UILabel!
     
     
     //配列に指定するindex番号を宣言
@@ -78,6 +77,15 @@ class ViewController: UIViewController {
         override func prepare(for segue: UIStoryboardSegue, sender: Any?){
             let zoomViewController:zoomViewController = segue.destination as! zoomViewController
             zoomViewController.image=imageArray[nowIndex]
-            print("hello")}
+            //タイマーを停止する
+            timer.invalidate()
+            //タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+            timer=nil
+            //ボタンの名前を再生に直しておく
+            startButton.setTitle("再生", for: .normal)
+            //進む・戻るボタンを有効にする
+            nextImage.isEnabled = true
+            backImage.isEnabled = true
+            }
         }
  

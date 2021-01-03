@@ -10,7 +10,7 @@ import UIKit
 class zoomViewController: UIViewController {
     var image: UIImage?
     @IBOutlet weak var zoomImage: UIImageView!
-    @IBOutlet weak var hello1: UILabel!
+ 
     
     //受け取るためのプロパティ（変数）を宣言しておく
     override func viewDidLoad() {
