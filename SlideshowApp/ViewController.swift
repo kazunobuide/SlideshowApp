@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     //スライドショーに指定するタイマーを宣言
     var timer: Timer!
     //スライドショーさせる画像の配列を宣言
-    var imageArray:[UIImage]=[UIImage(named:"img1")!,UIImage(named:"img2")!,UIImage(named:"img3")!]
+    var imageArray:[UIImage]=[UIImage(named:"img1.jpeg")!,UIImage(named:"img2.jpeg")!,UIImage(named:"img3.jpeg")!]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
