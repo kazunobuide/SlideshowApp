@@ -75,8 +75,12 @@ class ViewController: UIViewController {
     
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+            if (timer == nil){
             let zoomViewController:zoomViewController = segue.destination as! zoomViewController
-            zoomViewController.image=imageArray[nowIndex]
+                zoomViewController.image=imageArray[nowIndex]
+            }else{
+                let zoomViewController:zoomViewController = segue.destination as! zoomViewController
+                    zoomViewController.image=imageArray[nowIndex]
             //タイマーを停止する
             timer.invalidate()
             //タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
@@ -86,6 +90,7 @@ class ViewController: UIViewController {
             //進む・戻るボタンを有効にする
             nextImage.isEnabled = true
             backImage.isEnabled = true
+            }
             }
         }
  
