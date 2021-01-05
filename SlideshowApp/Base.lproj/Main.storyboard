@@ -36,6 +36,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="277" id="HiJ-Zk-OGR"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BLx-sj-q8I" appends="YES" id="ejA-zV-Lh6"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjd-wZ-tQx">
                                 <rect key="frame" x="50" y="782" width="31" height="30"/>
@@ -59,9 +62,6 @@
                             <constraint firstItem="HZE-bE-tIu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="fM0-Sk-zQa"/>
                             <constraint firstItem="mjd-wZ-tQx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rAM-NO-2sY"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Nyc-DB-Vzt" appends="YES" id="ss4-gi-tnR"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="backImage" destination="mjd-wZ-tQx" id="WcG-IY-m7O"/>
@@ -71,9 +71,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Nyc-DB-Vzt">
+                <tapGestureRecognizer id="BLx-sj-q8I">
                     <connections>
-                        <segue destination="DjB-1i-2ki" kind="show" id="xQW-6j-lkZ"/>
+                        <segue destination="DjB-1i-2ki" kind="show" id="RQx-A5-hBf"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
